@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+}
+h1 {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+h2 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: end;
+}
+h3 {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: start;
+}
+.subtitle {
+    color: black;
+    margin-bottom: 30px;
+    font-size: 14px;
+    }
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+label {
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+}
+input {
+    padding: 10px 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100px;
+    transition: border-color 0.3s;
+}
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+#chart {
+    margin-top: 20px;
+}
+svg {
+    width: 100%;
+            height: auto;
+}
+.bar {
+    fill: #667eea;
+    transition: fill 0.2s;
+    cursor: pointer;
+}
+.bar:hover {
+    fill: #764ba2;
+}
+.axis-label {
+    font-size: 12px;
+    fill: black;
+}
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    display: none;
+    z-index: 100;
+        }
+.title-label {
+    font-size: 11px;
+    fill: black;
+    font-weight: 500;
+}
+.value-label {
+    font-size: 11px;
+    fill: white;
+    font-weight: 600;
+}
+.chart-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.chart-btn {
+    padding: 10px 20px;
+    border: 2px solid #667eea;
+    background: white;
+    color: #667eea;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.chart-btn.active {
+    background: #667eea;
+    color: white;
+}
+.chart-btn:hover {
+    background: #667eea;
+    color: white;
+}
+    .controls-group {
+    display: none;
+        }
+.controls-group.active {
+    display: flex;
+        }
+.chart-container {
+    display: none;
+}
+.chart-container.active {
+    display: block;
+}
