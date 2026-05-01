@@ -5,7 +5,7 @@
 }
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, black 0%, black 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -23,7 +23,7 @@ h1 {
     font-size: 28px;
 }
 h2 {
-    color: black;
+    color: #0e9e26;
     margin-bottom: 20px;
     font-size: 28px;
     text-align: end;
@@ -31,14 +31,14 @@ h2 {
 h3 {
     color: black;
     margin-bottom: 20px;
-    font-size: 28px;
-    text-align: start;
+    font-size: 35px;
+    text-align: center;
 }
 .subtitle {
     color: black;
     margin-bottom: 30px;
     font-size: 14px;
-    }
+}
 .controls {
     display: flex;
     gap: 15px;
@@ -60,7 +60,7 @@ input {
 }
 input:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #0e9e26;
 }
 #chart {
     margin-top: 20px;
@@ -70,12 +70,12 @@ svg {
             height: auto;
 }
 .bar {
-    fill: #667eea;
+    fill: #0e9e26;
     transition: fill 0.2s;
     cursor: pointer;
 }
 .bar:hover {
-    fill: #764ba2;
+    fill: #7ae48c;
 }
 .axis-label {
     font-size: 12px;
@@ -109,20 +109,20 @@ svg {
 }
 .chart-btn {
     padding: 10px 20px;
-    border: 2px solid #667eea;
+    border: 2px solid #0e9e26;
     background: white;
-    color: #667eea;
+    color: #0e9e26;
     border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
 }
 .chart-btn.active {
-    background: #667eea;
+    background: #0e9e26;
     color: white;
 }
 .chart-btn:hover {
-    background: #667eea;
+    background: #0e9e26;
     color: white;
 }
     .controls-group {
@@ -136,4 +136,22 @@ svg {
 }
 .chart-container.active {
     display: block;
+}
+nav a {
+  font-size: 30px; 
+  font-weight: 600;   
+  color: #0e9e26;        
+  text-decoration: none; 
+  margin-right: 15px;  
+}
+nav a:hover {
+  color: #5c9e5c;
+  text-decoration: underline;
+}
+.text-box {
+  max-width: 500px;   
+  word-wrap: break-word; 
+  line-height: 1.5;  
+  margin: 0 auto;
+  text-align: center;
 }
