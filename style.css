@@ -155,3 +155,9 @@ nav a:hover {
   margin: 0 auto;
   text-align: center;
 }
+img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
